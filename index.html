@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New Every Morning | A 90-Day Devotional by Erica K. King, PhD</title>
+<meta name="description" content="New Every Morning: 90 Days of Scripture, Prayer, and Simple Practices to Release Worry and Embrace Joy, written for Black women over 50. Join the early list.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600&display=swap">
+<style>
+  :root {
+    --raspberry: #9E1F57;
+    --wine: #5C0F31;
+    --gold: #F6C445;
+    --blush: #FBE3EC;
+    --cream: #FFF4E6;
+    --ink: #2A1420;
+    --serif: 'DM Serif Display', Georgia, serif;
+    --sans: 'Outfit', 'Helvetica Neue', Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--cream); color: var(--ink); font-family: var(--sans); }
+  img, svg { max-width: 100%; }
+  a { color: var(--raspberry); }
+  a:hover { color: var(--wine); }
+  :focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+  .wrap { max-width: 1120px; margin: 0 auto; }
+  section { padding: 88px 24px; }
+  h1, h2, h3 { font-family: var(--serif); font-weight: 400; margin: 0; }
+  h2 { font-size: clamp(32px, 4vw, 46px); line-height: 1.15; color: var(--wine); }
+  p { margin: 0; }
+
+  /* Hero */
+  .hero { background: var(--raspberry); color: var(--cream); padding: 72px 24px 88px; }
+  .hero .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 56px; }
+  .hero-text { flex: 999 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 20px; }
+  .eyebrow { font-size: 14px; font-weight: 500; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); }
+  .hero h1 { font-size: clamp(48px, 7vw, 84px); line-height: 1; }
+  .hero h1 em { color: var(--gold); }
+  .hero .lead { font-size: 21px; line-height: 1.5; max-width: 560px; }
+  .hero .note { font-size: 17px; line-height: 1.6; max-width: 560px; color: var(--blush); }
+  .cover { flex: 1 1 340px; display: flex; justify-content: center; }
+  .cover svg { width: 390px; height: auto; border-radius: 6px; box-shadow: 0 24px 48px rgba(40, 6, 22, 0.45); }
+
+  /* Sign-up form */
+  .signup { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; max-width: 560px; width: 100%; margin-top: 8px; }
+  .field { flex: 1 1 260px; display: flex; flex-direction: column; gap: 8px; text-align: left; }
+  .field label { font-size: 15px; font-weight: 500; }
+  .field input { height: 52px; padding: 0 16px; border-radius: 10px; font-family: inherit; font-size: 17px; color: var(--ink); }
+  .signup button { height: 52px; padding: 0 28px; border-radius: 10px; border: none; font-family: inherit; font-size: 17px; font-weight: 600; cursor: pointer; }
+  .hero .field input { border: 2px solid var(--cream); background: var(--cream); }
+  .hero .signup button { background: var(--gold); color: var(--ink); }
+  .small { font-size: 14px; color: var(--blush); }
+
+  /* Intro */
+  .intro .wrap { max-width: 760px; text-align: center; display: flex; flex-direction: column; gap: 20px; align-items: center; }
+  .intro p { font-size: 19px; line-height: 1.7; }
+
+  /* Three parts */
+  .parts { background: var(--blush); }
+  .parts .wrap { display: flex; flex-direction: column; gap: 40px; }
+  .parts h2 { text-align: center; }
+  .part-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+  .part { background: var(--cream); border-radius: 16px; padding: 32px; display: flex; flex-direction: column; gap: 12px; }
+  .part .days { font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--raspberry); }
+  .part h3 { font-size: 30px; }
+  .part p { font-size: 17px; line-height: 1.6; }
+
+  /* Daily page */
+  .daily .wrap { display: flex; flex-direction: column; gap: 40px; }
+  .daily h2 { text-align: center; }
+  .daily-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; }
+  .daily-item { border-top: 3px solid var(--raspberry); padding-top: 16px; display: flex; flex-direction: column; gap: 6px; }
+  .daily-item strong { font-size: 19px; font-weight: 600; }
+  .daily-item span { font-size: 16px; line-height: 1.5; }
+
+  /* Author */
+  .author { background: var(--wine); color: var(--cream); }
+  .author .wrap { display: flex; flex-wrap: wrap; gap: 48px; align-items: center; }
+  .author-photo { flex: 1 1 260px; display: flex; justify-content: center; }
+  .photo-circle { width: 260px; height: 260px; border-radius: 50%; background: var(--raspberry); border: 4px solid var(--gold); display: flex; align-items: center; justify-content: center; text-align: center; font-size: 15px; color: var(--blush); overflow: hidden; }
+  .photo-circle img { width: 100%; height: 100%; object-fit: cover; object-position: center 25%; }
+  .author-text { flex: 999 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 16px; }
+  .author h2 { color: var(--cream); }
+  .author p { font-size: 18px; line-height: 1.7; }
+
+  /* Final call */
+  .final .wrap { max-width: 640px; display: flex; flex-direction: column; gap: 20px; align-items: center; text-align: center; }
+  .final p { font-size: 18px; line-height: 1.6; }
+  .final .field input { border: 2px solid var(--raspberry); background: #FFFFFF; }
+  .final .signup button { background: var(--raspberry); color: var(--cream); }
+
+  footer { border-top: 1px solid #E8C9D4; padding: 32px 24px; text-align: center; font-size: 15px; color: #6B4A58; }
+</style>
+</head>
+<body>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-text">
+        <div class="eyebrow">Coming soon · A 90-day devotional</div>
+        <h1>New Every <em>Morning</em></h1>
+        <p class="lead">90 Days of Scripture, Prayer, and Simple Practices to Release Worry and Embrace Joy, written for Black women over 50.</p>
+        <p class="note">Join the early list to be the first to know when the book is ready, and receive a free sample devotional.</p>
+
+        <!-- ============================================================
+             EMAIL SIGN-UP FORM #1
+             Replace everything from START to END with the form code
+             from MailerLite or Kit (copy their "embed form" HTML).
+             ============================================================ -->
+        <!-- START -->
+        <form class="signup" action="#" method="post">
+          <div class="field">
+            <label for="email-top">Your email address</label>
+            <input id="email-top" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+          </div>
+          <button type="submit">Join the early list</button>
+        </form>
+        <!-- END -->
+
+        <p class="small">No spam. Unsubscribe anytime.</p>
+      </div>
+
+      <div class="cover">
+        <svg viewBox="0 0 600 900" role="img" aria-label="Book cover: New Every Morning, by Erica K. King, PhD">
+          <rect width="600" height="900" fill="#9E1F57"/>
+          <text x="56" y="70" fill="#F6C445" font-family="Outfit, sans-serif" font-size="14" font-weight="500" letter-spacing="3">FOR BLACK WOMEN OVER 50</text>
+          <text x="56" y="172" fill="#FFF4E6" font-family="'DM Serif Display', Georgia, serif" font-size="92">New Every</text>
+          <text x="56" y="284" fill="#F6C445" font-family="'DM Serif Display', Georgia, serif" font-size="116" font-style="italic">Morning</text>
+          <text fill="#FFF4E6" font-family="Outfit, sans-serif" font-size="19">
+            <tspan x="56" y="346">90 Days of Scripture, Prayer, and Simple</tspan>
+            <tspan x="56" y="373">Practices to Release Worry and Embrace Joy</tspan>
+          </text>
+          <g fill="#F6C445" transform="translate(0 529)">
+            <path d="M90 70 l4 11 l11 4 l-11 4 l-4 11 l-4 -11 l-11 -4 l11 -4 Z"/>
+            <path d="M505 50 l3 8 l8 3 l-8 3 l-3 8 l-3 -8 l-8 -3 l8 -3 Z"/>
+            <path d="M530 140 l3 8 l8 3 l-8 3 l-3 8 l-3 -8 l-8 -3 l8 -3 Z"/>
+          </g>
+          <circle cx="300" cy="849" r="290" fill="#C8386E"/>
+          <circle cx="300" cy="849" r="225" fill="#D9604C"/>
+          <circle cx="300" cy="849" r="165" fill="#F29A5B"/>
+          <circle cx="300" cy="849" r="108" fill="#F6C445"/>
+          <rect x="0" y="799" width="600" height="101" fill="#5C0F31"/>
+          <text x="300" y="858" text-anchor="middle" fill="#FFF4E6" font-family="Outfit, sans-serif" font-size="18" font-weight="500" letter-spacing="3">ERICA K. KING, PHD</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro">
+    <div class="wrap">
+      <h2>You've carried everyone else. This season is for you.</h2>
+      <p>You're the one everybody calls. You pray, you plan, you hold it together, and still the worry wakes you at 2 a.m. <em>New Every Morning</em> meets you there, with a few quiet minutes each day of Scripture, gentle reflection, and simple practices that calm both your mind and your body.</p>
+    </div>
+  </section>
+
+  <section class="parts">
+    <div class="wrap">
+      <h2>A 90-day journey in three parts</h2>
+      <div class="part-grid">
+        <div class="part">
+          <div class="days">Days 1–30</div>
+          <h3>Release</h3>
+          <p>Name what weighs on you and lay down what was never yours to carry, from caregiving to health worries.</p>
+        </div>
+        <div class="part">
+          <div class="days">Days 31–60</div>
+          <h3>Renew</h3>
+          <p>Learn to answer anxious thoughts with God's truth, and make room for peace in your relationships.</p>
+        </div>
+        <div class="part">
+          <div class="days">Days 61–90</div>
+          <h3>Rest and Rise</h3>
+          <p>Rest in God's presence and step into joy and purpose in this beautiful season of life.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="daily">
+    <div class="wrap">
+      <h2>Each morning, in about ten minutes</h2>
+      <div class="daily-grid">
+        <div class="daily-item"><strong>Scripture</strong><span>A verse to anchor your day</span></div>
+        <div class="daily-item"><strong>Reflection</strong><span>A short, warm devotional reading</span></div>
+        <div class="daily-item"><strong>Simple practice</strong><span>Breath prayer, gentle stretches, and more</span></div>
+        <div class="daily-item"><strong>Prayer</strong><span>Words to carry your heart to God</span></div>
+        <div class="daily-item"><strong>Journal prompt</strong><span>Space to notice how you're growing</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="author">
+    <div class="wrap">
+      <div class="author-photo">
+        <div class="photo-circle"><img src="author.jpg" alt="Erica K. King, PhD" width="260" height="260"></div>
+      </div>
+      <div class="author-text">
+        <div class="eyebrow">Meet the author</div>
+        <h2>Erica K. King, PhD</h2>
+        <p>Dr. Erica K. King holds a PhD in health psychology and teaches psychology at the university level. She created the LivingSMART stress management program and brings together faith and practical, research-based tools to help women find calm, peace, and joy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <h2>Begin again with every sunrise</h2>
+      <p>Join the early list for launch news and your free sample devotional.</p>
+
+      <!-- ============================================================
+           EMAIL SIGN-UP FORM #2
+           Replace everything from START to END with the same form code
+           from MailerLite or Kit that you used above.
+           ============================================================ -->
+      <!-- START -->
+      <form class="signup" action="#" method="post">
+        <div class="field">
+          <label for="email-bottom">Your email address</label>
+          <input id="email-bottom" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+        </div>
+        <button type="submit">Join the early list</button>
+      </form>
+      <!-- END -->
+    </div>
+  </section>
+</main>
+
+<footer>© 2026 Erica K. King, PhD · New Every Morning</footer>
+
+</body>
+</html>
